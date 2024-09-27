@@ -1,0 +1,21 @@
+@mixin btnBase {
+	font-size: $fs16;
+	font-weight: $fw700;
+	line-height: $lh22px;
+	padding: 12px 32px;
+	border-radius: 5px;
+}
+
+@mixin nav-list {
+	display: flex;
+	align-items: center;
+	text-wrap: nowrap;
+	padding: 19px 38px;
+	border-radius: 5px;
+}
+
+@mixin nav-item {
+	font-size: $fs16;
+	font-weight: $fw600;
+	line-height: $lh22px;
+}

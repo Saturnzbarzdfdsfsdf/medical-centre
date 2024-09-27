@@ -1,0 +1,58 @@
+// Regular
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lato"),
+         url('../../assets/fonts/Lato/Lato-Regular.woff2') format('woff2'),
+         url('../../assets/fonts/Lato/Lato-Regular.woff') format('woff'),
+         url('../../assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+// Regular
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Nunito Regular"),
+       url('../../assets/fonts/Nunito/static/Nunito-Regular.ttf')
+       format('truetype');
+}
+// SemiBold
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Nunito SemiBold"),
+       url('../../assets/fonts/Nunito/static/Nunito-SemiBold.ttf')
+       format('truetype');
+}
+// Bold
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Nunito Bold"),
+       url('../../assets/fonts/Nunito/static/Nunito-Bold.ttf')
+       format('truetype');
+}
+
+
+// Regular
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src:local("Roboto"), 
+  url('../../assets/fonts/Roboto/Roboto-Regular.ttf') format('woff2'),
+  
+}
+// Bold
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src:local("Roboto"), 
+  url('../../assets/fonts/Roboto/Roboto-Bold.ttf') format('woff2'),
+	
+}

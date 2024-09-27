@@ -1,0 +1,135 @@
+.footer {
+	background-color: $secondary-color;
+}
+
+// footer-top
+.footer-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// footer top
+.footer__logo {
+	display: inline-block;
+	margin: 20px 0 30px 0;
+}
+
+.footer-nav {
+	// padding-top: 20px;
+	&__list {
+		@include nav-list;
+		align-items: start;
+		gap: $g60;
+
+		&-item {
+			@include nav-item;
+		}
+	}
+
+	&__list-link {
+		color: $text-black-color;
+		transition: color 0.2s ease-in-out;
+	}
+	&__list-link:hover {
+		color: $accent-color;
+	}
+}
+
+// footer mid
+.footer__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+
+	&-item {
+		display: flex;
+		flex-direction: column;
+		gap: $g10;
+
+		.link-tel {
+			text-wrap: nowrap;
+			font-size: $fs28;
+			font-weight: $fw600;
+			line-height: $lh28px;
+			color: $color-blue-btn;
+			margin-bottom: 10px;
+			transition: color 0.2s ease-in-out;
+		}
+		.link-tel:hover {
+			color: $color-blue-hover-btn;
+		}
+	}
+	&-text {
+		span {
+			color: $hover-color;
+		}
+	}
+}
+
+.footer-copy {
+	color: $text-black-color;
+}
+.footer-copy + p {
+	color: $secondary-gray-color;
+	font-size: $fs14;
+	line-height: $lh28px;
+}
+
+.footer__list-btn {
+	@include btnBase;
+	background-color: $secondary-gray-color;
+	color: $text-gray-color;
+	margin-bottom: 45px;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background-color: $hover-color;
+	}
+}
+
+// footer bottom
+
+.footer-bottom {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+	}
+}
+
+.footer-bottom__list-item {
+	margin-right: 40px;
+	a {
+		transition: all 0.2s ease-in-out;
+	}
+	a:hover {
+		color: $color-blue-hover-btn;
+	}
+}
+
+.footer-version {
+	padding-bottom: 20px;
+}
+.version-box {
+	opacity: 0.7;
+	transition: color 0.2s ease-in-out;
+}
+
+.header__bottom-version:hover {
+	opacity: 1;
+}
+.underline {
+	text-decoration-line: underline;
+	text-underline-offset: 3px;
+  opacity: 0.6;
+}
+
+.footer__info {
+	background-color: #fff;
+	font-size: $fs14;
+  p {
+    padding: 10px 0;
+  }
+}
