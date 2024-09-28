@@ -19,3 +19,7 @@
 	font-weight: $fw600;
 	line-height: $lh22px;
 }
+
+@mixin baseTransition {
+	transition: all .1s ease-in-out;
+}

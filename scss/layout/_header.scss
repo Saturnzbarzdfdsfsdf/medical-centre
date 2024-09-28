@@ -3,8 +3,7 @@
 	background-color: $secondary-color;
 
 	&__logo {
-		margin-right: 50px;
-		margin-bottom: 5px;
+		margin: 0 50px 5px 0;
 	}
 	&__top {
 		display: flex;
@@ -13,7 +12,7 @@
 		&-list {
 			display: flex;
 			align-items: center;
-			gap: 80px;
+			gap: $g80;
 
 			font-size: $fs14;
 			line-height: $lh18px;
@@ -27,7 +26,7 @@
 		}
 
 		.item-hover {
-			transition: all 0.1s ease-in;
+			@include baseTransition;
 			padding: 10px;
 			border-radius: 3px;
 		}
@@ -49,15 +48,6 @@
 			}
 		}
 	}
-}
-
-.header-btn {
-	display: flex;
-	align-items: center;
-}
-
-.none {
-	display: none;
 }
 
 .header-btn__account {
@@ -86,7 +76,8 @@
 		}
 		&-link {
 			color: $text-black-color;
-			transition: color 0.15s ease-in-out;
+			@include baseTransition;
+
 			&:hover {
 				color: $accent-color;
 			}
@@ -94,25 +85,35 @@
 	}
 }
 
-
-
 .header__bottom-btn {
 	@include btnBase;
 	color: $white-color;
 	background-color: $color-blue-btn;
+	@include baseTransition;
+
+	&:hover {
+		background-color: $color-blue-hover-btn;
+	}
 }
 
 .header__bottom-version {
 	font-size: $fs14;
 	line-height: $lh18px;
 	color: $text-black-color;
+
+	&:hover {
+		color: $color-blue-hover-btn;
+	}
 }
+
 .header__bottom-version::before {
 	content: '';
 	position: absolute;
 
-	top: 0;
-	left: -30px;
+	// top: 12px;
+	// left: -30px;
+	top: 20%;
+	left: -7%;
 	// inset: 0;
 
 	width: 21px;
@@ -122,5 +123,76 @@
 }
 
 .version-box {
+	display: flex;
+	align-items: center;
 	position: relative;
+	gap: 40px;
+	@include baseTransition;
+}
+
+// media
+
+@media (max-width: 1349px) {
+	.version-box {
+		flex-direction: column;
+		margin-left: 30px;
+		gap: 30px;
+
+		.header__bottom-version::before {
+			top: -2%;
+			left: -10%;
+		}
+	}
+
+	.form {
+		display: none;
+	}
+}
+
+@media (max-width: 1149px) {
+	.nav {
+		display: none;
+	}
+	.header__bottom {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.version-box {
+		flex-direction: row;
+		.header__bottom-version::before {
+			top: 20%;
+			left: -10%;
+		}
+	}
+	.header__top-list {
+		gap: 30px;
+	}
+	.item-hove {
+		display: none;
+	}
+}
+@media (max-width: 1049px) {
+	.item-hover {
+		display: none;
+	}
+
+	.header__top-list {
+		gap: 100px;
+	}
+}
+@media (max-width: 1049px) {
+	.header__top-list {
+		display: none;
+	}
+	.form {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.test-icon {
+	width: 24px;
+	height: 24px;
+	//  stroke-width: 10px;
 }

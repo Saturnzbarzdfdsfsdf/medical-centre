@@ -100,7 +100,11 @@
 }
 
 .footer-bottom__list-item {
-	margin-right: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	// margin-right: 40px;
 	a {
 		transition: all 0.2s ease-in-out;
 	}
@@ -112,14 +116,7 @@
 .footer-version {
 	padding-bottom: 20px;
 }
-.version-box {
-	opacity: 0.7;
-	transition: color 0.2s ease-in-out;
-}
 
-.header__bottom-version:hover {
-	opacity: 1;
-}
 .underline {
 	text-decoration-line: underline;
 	text-underline-offset: 3px;
@@ -133,3 +130,8 @@
     padding: 10px 0;
   }
 }
+
+.column {
+	flex-direction: column;
+}
+
