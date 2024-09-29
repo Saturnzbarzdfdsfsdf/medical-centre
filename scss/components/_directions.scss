@@ -1,0 +1,65 @@
+.directions {
+	padding-bottom: 435px;
+  position: relative;
+
+	&__cards {
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+		display: flex;
+		gap: $g30;
+	}
+	&__card {
+		display: flex;
+		background-color: $menu-bg-color;
+		width: 315px;
+		height: 450px;
+		padding: 30px;
+		border-radius: 5px;
+		// box-shadow: 10px 5px 5px rgb(197, 197, 197);
+
+		&-title {
+			color: $text-black-color;
+			font-size: $fs22;
+			font-weight: $fw700;
+			line-height: $lh22px;
+			margin-bottom: 40px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				display: block;
+
+				// inset: 0;
+				// bottom: 0;
+				// right: 0;
+				left: 0;
+				top: 53px;
+				border-bottom: 1px solid rgb(198, 217, 226);
+				width: 245px;
+				color: red;
+			}
+		}
+
+		&-list {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			gap: $g20;
+			font-size: $fs18;
+			line-height: $lh28px;
+		}
+
+		&-link {
+			color: $text-black-color;
+		}
+
+		&-btn {
+			display: inline-block;
+			width: 240px;
+			margin-top: 5px;
+			background-color: $color-blue-btn;
+		}
+	}
+}
+

@@ -1,0 +1,57 @@
+.form {
+	&-bg {
+		border-radius: 14px;
+		background: linear-gradient(
+			-45deg,
+			rgb(0, 116, 184) 0%,
+			rgb(2, 176, 197) 100%
+		);
+	}
+}
+
+.form-top {
+	display: flex;
+	justify-content: space-between;
+	color: $white-color;
+	margin-bottom: 30px;
+}
+.form__title {
+	@include secondaryTitle;
+	max-width: 550px;
+}
+.form-subtitle {
+	font-size: $fs20;
+	line-height: $lh28px;
+	max-width: 355px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 95px;
+  }
+
+}
+
+.form-box {
+	display: flex;
+  gap: 20px;
+	flex-direction: column;
+}
+
+.box-color {
+	width: 355px;
+	height: 70px;
+	background-color: $white-color;
+}
+
+.form-btn {
+  background-color: $accent-color;
+
+}

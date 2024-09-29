@@ -23,3 +23,9 @@
 @mixin baseTransition {
 	transition: all .1s ease-in-out;
 }
+
+@mixin secondaryTitle {
+	font-size: $fs48;
+	line-height: $lh48px;
+	font-weight: $fw700;
+}
