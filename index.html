@@ -86,7 +86,7 @@
 						<nav class="nav">
 							<ul class="nav__list">
 								<li class="nav__list-item">
-									<a class="nav__list-link" href="#">Направления</a>
+									<a class="nav__list-link" href="/form.html">test FROM</a>
 								</li>
 								<li class="nav__list-item">
 									<a class="nav__list-link" href="#">Услуги</a>
@@ -262,49 +262,84 @@
 					</div>
 				</section>
 
-				<section class="form">
-					
+				<section class="section-form">
 					<div class="container form-bg">
-						<div class="form__inner">
-						
-							<div class="form-top">
-								<h2 class="form__title">Записаться на приём</h2>
-								<p class="form-subtitle">
-									Оставьте заявку и мы свяжемся с вами в ближайшее время
+						<form class="form">
+							<fieldset class="form__top">
+								<h2 class="form__top-title">
+									Записаться на <br />
+									приём
+								</h2>
+								<p class="form__top-subtitle">
+									Оставьте заявку и мы свяжемся с вами в ближайшее время
 								</p>
-							</div>
-	
-							<div class="form-bottom">
-								<form action="" class="form">
-	
-									<div class="form-box">
-										<select class="box-color" name="referral" id="referral" class="form__select`">
-											<option value="value1">Направление 1</option>
-											<option value="value2">Направление 2</option>
+							</fieldset>
+
+							<div class="form-inner">
+								<fieldset class="form__box-select">
+									<label for="referral">
+										<select name="category" id="referral" class="form__select">
+											<option value="value1">Выберете направление</option>
+											<option value="value2">Направление 1</option>
+											<option value="value3">Направление 2</option>
 											<option value="value3">Направление 3</option>
 										</select>
-	
-										<select class="box-color" name="doctors" id="doctors" class="form__select">
+									</label>
+
+									<label for="doctors">
+										<select
+											name="category-doctors"
+											class="form__select"
+											id="doctors"
+										>
+											<option value="doctor1">Выберете врача</option>
 											<option value="doctor1">Доктор 1</option>
 											<option value="doctor2">Доктор 2</option>
 											<option value="doctor3">Доктор 3</option>
 										</select>
-									</div>
-	
-									<div class="form-box">
-										<input class="box-color" id="name" type="text" />
-										<input class="box-color" id="phone" type="number" />
-									</div>
-	
-									<div class="form-box">
-										<input class="button form-btn" id="submit" type="submit" value="Отправить заявку" />
-										<input id="checkbox" type="checkbox" />
-										<label for="checkbox">Отправляя заявку, вы соглашаетесь на нашу политику конфиденциальности</label>
-									</div>
-								</form>
+									</label>
+								</fieldset>
+
+								<fieldset class="form__box-input">
+									<label for="name">
+										<input
+											class="form__input"
+											id="name"
+											type="text"
+											placeholder="Ваше имя"
+										/>
+									</label>
+									<label for="phone">
+										<input
+											class="form__input"
+											id="phone"
+											type="number"
+											placeholder="Ваш телефон"
+										/>
+									</label>
+								</fieldset>
+
+								<fieldset class="form__box-btn">
+
+									<input
+										value="Оставить заявку"
+										class="form__btn"
+										id="submit"
+										type="submit"
+									/>
+
+									<label for="checkbox"
+										><input id="checkbox" type="checkbox" /> Отправляя заявку,
+										вы соглашаетесь на нашу</label
+									>
+									<a class="confidentiality" href="#"
+										>политику конфиденциальности</a
+									>
+								</fieldset>
 							</div>
-						</div>
+						</form>
 					</div>
+					<!--container-->
 				</section>
 			</main>
 

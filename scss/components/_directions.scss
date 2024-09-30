@@ -5,6 +5,8 @@
 	&__cards {
     position: absolute;
     z-index: 3;
+		// left: 275px;
+		margin: 0 auto;
     bottom: 30px;
 		display: flex;
 		gap: $g30;
@@ -12,7 +14,7 @@
 	&__card {
 		display: flex;
 		background-color: $menu-bg-color;
-		width: 315px;
+		width: 332px;
 		height: 450px;
 		padding: 30px;
 		border-radius: 5px;
