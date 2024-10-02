@@ -150,10 +150,6 @@ legend {
   display: block;
 }
 
-h1 {
-  font-size: 100px;
-}
-
 .header {
   padding: 5px 0 10px 0;
   background-color: rgb(240, 246, 249);
@@ -945,6 +941,252 @@ h1 {
   line-height: 28px;
   font-weight: 700;
   color: rgb(1, 124, 193);
+}
+
+.carousel {
+  margin-bottom: 120px;
+}
+
+.swiper-slide {
+  width: 305px;
+  height: 450px;
+}
+
+.carousel__top {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.carousel__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  background-color: rgb(234, 246, 255);
+  color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+  top: 25px;
+  left: 1310px;
+  color: rgb(1, 124, 193);
+}
+.swiper-button-prev:hover {
+  background-color: rgb(1, 124, 193);
+  color: rgb(255, 255, 255);
+}
+
+.swiper-button-next {
+  position: absolute;
+  background-color: rgb(234, 246, 255);
+  color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+  top: 25px;
+  left: 1370px;
+  color: rgb(1, 124, 193);
+}
+.swiper-button-next:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(1, 124, 193);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 305px;
+  height: 425px;
+  border-radius: 5px;
+  background-color: rgb(240, 246, 249);
+  gap: 20px;
+}
+
+.card-title {
+  width: 245px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: start;
+}
+
+.card-btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+  background-color: rgb(0, 87, 138);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 245px;
+  margin-bottom: 30px;
+}
+.card-btn:hover {
+  background-color: rgb(1, 124, 193);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+}
+
+.sale {
+  overflow: hidden;
+  margin-bottom: 120px;
+}
+.sale__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.sale__card {
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+  width: 753px;
+  height: 425px;
+  border-radius: 10px;
+  background: linear-gradient(-34.53deg, rgb(0, 116, 184) 22.697%, rgb(0, 186, 198) 108.969%);
+}
+.sale__card-date {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: rgb(0, 225, 218);
+  color: rgb(20, 20, 20);
+  border-radius: 10px;
+  max-width: 195px;
+  margin-bottom: 165px;
+  padding: 13px 24px;
+}
+.sale__card-date::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -10px;
+  background: no-repeat right url("../../assets/img/botox.png");
+}
+.sale__card-discount {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 12px;
+}
+.sale__card-for {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.doctor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.doctor-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(1, 124, 193);
+}
+.doctor-desc {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.reviews {
+  overflow: hidden;
+}
+.reviews__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.reviews__group {
+  min-width: 640px;
+}
+.reviews__group .start {
+  margin-bottom: 30px;
+}
+.reviews__group-name {
+  font-weight: 700;
+}
+.reviews__group-date {
+  margin-bottom: 30px;
+}
+.reviews__group-desc {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.reviews__group-btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 12px 32px;
+  border-radius: 5px;
+  display: inline-block;
+  color: rgb(1, 124, 193);
+  border: 1px solid rgb(1, 124, 193);
+  margin-bottom: 30px;
+  padding: 16px 60px;
+}
+
+.reviews__group-doctor {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+.reviews__group-doctor span {
+  color: rgb(1, 124, 193);
+}
+
+.equipment {
+  overflow: hidden;
+  margin-bottom: 120px;
+}
+.equipment__card {
+  background-color: rgb(240, 246, 249);
+  width: 415px;
+  text-align: start;
+}
+.equipment__card-img {
+  margin-bottom: 15px;
+}
+.equipment__card-title {
+  color: rgb(1, 124, 193);
+  font-size: 14px;
+  padding: 0 30px 15px 30px;
+}
+.equipment__card-title span {
+  font-weight: 600;
+  font-size: 32px;
+}
+.equipment__card-desc {
+  max-width: 355px;
+  color: rgb(20, 20, 20);
+  line-height: 22px;
+  padding: 0 0 0 30px;
 }
 
 .none {

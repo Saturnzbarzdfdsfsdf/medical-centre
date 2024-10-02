@@ -1,0 +1,32 @@
+.equipment {
+  overflow: hidden;
+  margin-bottom: $mb120;
+	&__card {
+		background-color: $menu-bg-color;
+    width: 415px;
+    // height: 505px;
+    text-align: start;
+
+		&-img {
+			margin-bottom: 15px;
+		}
+
+		&-title {
+			color: $color-blue-hover-btn;
+			font-size: $fs14;
+			padding: 0 30px 15px 30px;
+			span {
+				font-weight: $fw600;
+				font-size: $fs32;
+			}
+		}
+
+    &-desc {
+      // display: inline-block;
+      max-width: 355px;
+      color: $text-black-color;
+      line-height: $lh22px;
+      padding: 0 0 0 30px;
+    }
+	}
+}

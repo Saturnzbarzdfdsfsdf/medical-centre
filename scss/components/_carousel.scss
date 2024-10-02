@@ -1,0 +1,88 @@
+.carousel {
+	margin-bottom: 120px;
+}
+
+.swiper-slide {
+	// background-color: plum;
+	width: 305px;
+	height: 450px;
+}
+
+.carousel__top {
+	position: relative;
+	margin-bottom: 40px;
+}
+.carousel__title {
+	@include secondaryTitle;
+}
+
+.swiper-button-prev {
+	@include btnSwiper;
+	@include baseTransition;
+
+	top: 25px;
+	left: 1310px;
+	color: $color-blue-hover-btn;
+
+	&:hover {
+		background-color: $color-blue-hover-btn;
+		color: $white-color;
+	}
+}
+.swiper-button-next {
+	@include btnSwiper;
+	@include baseTransition;
+
+	top: 25px;
+	left: 1370px;
+	color: $color-blue-hover-btn;
+
+	&:hover {
+		color: $white-color;
+		background-color: $color-blue-hover-btn;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	max-width: 305px;
+	height: 425px;
+	border-radius: $bore5;
+	background-color: $menu-bg-color;
+
+	gap: 20px;
+}
+
+.card-title {
+	width: 245px;
+	font-size: $fs20;
+	font-weight: $fw600;
+	line-height: $lh28px;
+	text-align: start;
+	// text-align: center;
+}
+.card-btn {
+	display: inline-block;
+	@include btnBase;
+	@include baseTransition;
+
+	background-color: $color-blue-btn;
+	color: $white-color;
+	text-align: center;
+	width: 245px;
+	margin-bottom: 30px;
+
+	&:hover {
+		background-color: $color-blue-hover-btn;
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	--swiper-navigation-size: 20px;
+	--swiper-navigation-color: var(--swiper-theme-color);
+}

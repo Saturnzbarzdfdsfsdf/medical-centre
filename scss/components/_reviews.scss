@@ -1,0 +1,47 @@
+.reviews {
+  overflow: hidden;
+  
+  &__title {
+    @include secondaryTitle;
+    margin-bottom: $mb40;
+  }
+
+}
+
+.reviews__group {
+  min-width: 640px;
+
+  .start {
+    margin-bottom: 30px;
+  }
+
+  &-name {
+    font-weight: $fw700;
+  }
+  &-date {
+  margin-bottom: $mb30;
+  }
+  &-desc {
+    font-size: $fs20;
+    font-weight: $fw600;
+    line-height: $lh28px;
+    margin-bottom: $mb30;
+  }
+}
+.reviews__group-btn {
+  @include btnBase;
+  display: inline-block;
+  color: $color-blue-hover-btn;
+  border: 1px solid $color-blue-hover-btn;
+  margin-bottom: $mb30;
+  padding: 16px 60px;
+
+}
+.reviews__group-doctor {
+  font-weight: $fw600;
+  font-size: $fs20;
+  line-height: $lh28px;
+    span{
+      color: $color-blue-hover-btn;
+    }
+}

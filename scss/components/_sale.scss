@@ -1,0 +1,65 @@
+.sale {
+  overflow: hidden;
+  margin-bottom: $mb120;
+
+  &__title {
+    @include secondaryTitle;
+    margin-bottom: 40px;
+  }
+}
+.sale__card {
+  cursor: pointer;
+  display: inline-block;
+  color: $white-color;
+  position: relative;
+  overflow: hidden;
+
+  padding: 40px;
+  width: 753px;
+  height: 425px;
+	border-radius: $bore10;
+	background: linear-gradient(
+		-34.53deg,
+		rgb(0, 116, 184) 22.697%,
+		rgb(0, 186, 198) 108.969%
+	);
+
+  &-date {
+    font-size: $fs14;
+    font-weight: $fw700;
+    background-color: $accent-hover-color;
+    color: $text-black-color;
+    border-radius: $bore10;
+    max-width: 195px;
+    margin-bottom: 165px;
+    padding: 13px 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+
+      // inset: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: -10px;
+
+      background: no-repeat right url('../../assets/img/botox.png');
+    }
+
+  }
+  
+  &-discount {
+    font-size: $fs60;
+    font-weight: $fw700;
+    line-height: $lh60px;
+    margin-bottom: 12px;
+
+  }
+  
+  &-for {
+    font-size: $fs28;
+    font-weight: $fw600;
+    line-height: $lh32px;
+  }
+}
